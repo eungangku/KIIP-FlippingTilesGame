@@ -1,4 +1,4 @@
-# KIIP-FlippingTilesGame
+# KIIP-FlippingTilesGame Maker
 Based on https://github.com/sandraisrael/Memory-Game-fend
 
 
