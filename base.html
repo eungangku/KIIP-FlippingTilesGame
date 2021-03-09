@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title id="title">사회통합 1단계 단어게임 - 3과</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src='src/jquery.js'></script>
+	<script type="text/javascript" src='src/jquery.adaptive-backgrounds.js'></script>
+	  
+	  <script type="text/javascript">
+	$(document).ready(function(){
+	var opts = {
+	selector: 'img[data-adaptive-background="1"]', // a CSS selector which denotes which images to grab/process
+	parent: null // a CSS selector which denotes which parent to apply the background color to. 
+	}
+	$.adaptiveBackground.run(opts)
+	});
+</script>
+	
+	<link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Permanent+Marker" >
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1 id="h1">3-1과 단어게임</h1>
+        </header>
+
+        <section class="score-panel">
+        	<ul class="stars">
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        	</ul>
+
+        	<span class="moves">0</span>번 시도
+
+            <div class="timer">
+            </div>
+
+            <div class="restart" onclick=startGame()>
+        		<i class="fa fa-repeat"></i>
+        	</div>
+        </section>
+
+<ul class="deck" id="card-deck">
+    <li class="card" type="1">
+        <span id="num">1</span>
+        <p id="img-container"><img id="i1" src="" data-adaptive-background="1"></img></p>
+    </li>
+    <li class="card" type="2">
+        <span id="num">2</span>
+        <p id="img-container"><img id="i2" src="" data-adaptive-background="1"></img></p>
+            </li>
+            <li class="card" type="3">
+                <span id="num">3</span>
+                <p id="img-container"><img id="i3" src="" data-adaptive-background="1"></img></p>
+            </li>
+            <li class="card" type="4" >
+                <span id="num">4</span>
+                <p id="img-container"><img id="i4" src="" data-adaptive-background="1"></img></p>
+            </li>
+            <li class="card" type="5">
+                <span id="num">5</span>
+                <p id="img-container"><img id="i5" src="" data-adaptive-background="1"></img></p>
+            </li>
+            <li class="card" type="6">
+                <span id="num">6</span>
+                <p id="img-container"><img id="i6" src="" data-adaptive-background="1"></img></p>
+            </li>
+            <li class="card" type="7">
+                <span id="num">7</span>
+                <p id="img-container"><img id="i7" src="" data-adaptive-background="1"></img></p>
+            </li>
+            <li class="card" type="8">
+                <span id="num">8</span>
+                <p id="img-container"><img id="i8" src="" data-adaptive-background="1"></img></p>
+            </li>
+            <li class="card" type="1">
+                <span id="num">9</span>
+                <p id="t1">다이아몬드</p>
+            </li>
+            <li class="card" type="2">
+                <span id="num">10</span>
+                <p id="t2">비행기</p>
+            </li>
+            <li class="card" type="3">
+                <span id="num">11</span>
+                <p id="t3">닻</p>
+            </li>
+            <li class="card" type="4">
+                <span id="num">12</span>
+                <p id="t4">번개</p>
+            </li>
+            <li class="card" type="5">
+                <span id="num">13</span>
+                <p id="t5">큐브</p>
+            </li>
+            <li class="card" type="6">
+                <span id="num">14</span>
+                <p id="t6">잎</p>
+            </li>
+            <li class="card" type="7">
+                <span id="num">15</span>
+                <p id="t7">자전거</p>
+            </li>
+            <li class="card" type="8">
+                <span id="num">16</span>
+                <p id="t8">사과</p>
+            </li>
+        </ul>
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>축하합니다 🎉</h2>
+                <div class="content-1">
+                    단어퀴즈를 모두 맞히셨습니다. 🎉🎉
+                </div>
+                </div>
+                <button id="play-again"onclick="playAgain()">
+                    다시하기 😄</a>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
