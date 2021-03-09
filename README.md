@@ -1,4 +1,6 @@
 # KIIP-FlippingTilesGame
+Based on https://github.com/sandraisrael/Memory-Game-fend
+
 
 1. 압축 해제
 2. Make.exe 실행
