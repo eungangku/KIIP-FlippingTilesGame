@@ -2,6 +2,7 @@
 Based on https://github.com/sandraisrael/Memory-Game-fend
 
 
+## 사용 방법
 1. 압축 해제
 2. Make.exe 실행
 3. 차시, 단어, 이미지URL 입력 후 '만들기'클릭
